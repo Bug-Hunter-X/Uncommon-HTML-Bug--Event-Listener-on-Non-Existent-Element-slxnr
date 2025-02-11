@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Solution: Wait for the DOM to be fully loaded.
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").addEventListener("click", function() {
+        alert("Div clicked!");
+      });
+    });
+  </script>
+</body>
+</html>
