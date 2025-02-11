@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //This is a common mistake, assigning an event listener to an element that doesn't exist yet.
+    document.getElementById("myDiv").addEventListener("click", function() {
+      alert("Div clicked!");
+    });
+  </script>
+</body>
+</html>
